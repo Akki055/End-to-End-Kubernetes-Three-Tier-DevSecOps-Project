@@ -30,5 +30,5 @@ spec:
         ports:
         env:
           - name: REACT_APP_BACKEND_URL
-            value: "http://amanpathakdevops.study/api/tasks"
+            value: "http://103.150.136.186:8084/api/tasks"
         - containerPort: 3000
