@@ -28,4 +28,7 @@ spec:
         image: akki058/frontend:v1
         imagePullPolicy: Always
         ports:
+        env:
+          - name: REACT_APP_BACKEND_URL
+            value: "http://amanpathakdevops.study/api/tasks"
         - containerPort: 3000
