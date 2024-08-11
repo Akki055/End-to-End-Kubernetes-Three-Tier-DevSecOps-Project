@@ -25,10 +25,10 @@ spec:
       - name: ecr-registry-secret
       containers:
       - name: frontend
-        image: akki058/frontend:v1
+        image: akki058/frontend:3
         imagePullPolicy: Always
-        ports:
         env:
           - name: REACT_APP_BACKEND_URL
-            value: "http://103.150.136.186:8084/api/tasks"
+            value: "http://103.150.136.186/api/tasks"
+        ports:
         - containerPort: 3000
